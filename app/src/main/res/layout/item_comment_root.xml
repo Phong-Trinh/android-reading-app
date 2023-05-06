@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:padding="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_15sdp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:riv_corner_radius="@dimen/_200sdp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/avatar"
+            android:src="@drawable/avatar"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_username"
+                style="@style/NormalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_toStartOf="@+id/txt_time"
+                android:text="@string/username"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt_username"
+                android:layout_alignBottom="@+id/txt_username"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:text="@string/time"
+                style="@style/SmallText" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="content"
+            style="@style/SmallText"
+            tools:ignore="HardcodedText"
+            android:layout_marginVertical="@dimen/_2sdp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp">
+
+            <com.nex3z.flowlayout.FlowLayout
+                android:id="@+id/files_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:flChildSpacingForLastRow="align">
+
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/login_background"
+                    android:visibility="gone" />
+
+
+            </com.nex3z.flowlayout.FlowLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/_2sdp">
+
+            <LinearLayout
+                android:id="@+id/btn_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_reply"
+                    android:layout_marginEnd="@dimen/_5sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/reply"
+                    style="@style/SmallText"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/show_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_5sdp">
+            <View
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/line"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_5sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem các phản hồi"
+                style="@style/SmallText"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/hide_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginVertical="@dimen/_5sdp">
+            <View
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/line"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_5sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ẩn các phản hồi"
+                style="@style/SmallText"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity"
+    android:weightSum="5"
+    android:orientation="vertical"
+    android:background="@color/primary"
+    android:id="@+id/root">
+
+    <ImageView
+        android:id="@+id/avatar_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/background" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_content"
+            android:layout_marginBottom="-20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/highlight_button_background"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="Quay lại"
+                    android:textColor="@color/normal_text"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_account_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:gravity="center_horizontal"
+                android:text="Tài khoản chưa được xác thực"
+                android:textColor="@color/foreground"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:id="@+id/btn_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/highlight_button_background"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="Cập nhật ảnh đại diện"
+                    android:textColor="@color/normal_text"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent">
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/content_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_sheet">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <EditText
+                            android:id="@+id/username"
+                            style="@style/LineEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:enabled="false"
+                            android:hint="@string/username" />
+
+                        <EditText
+                            android:id="@+id/email"
+                            style="@style/LineEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_update_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:paddingHorizontal="@dimen/_20sdp"
+                            android:paddingVertical="@dimen/_7sdp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_edit" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:text="Thay đổi mật khẩu"
+                                android:textColor="@color/foreground"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/password"
+                                style="@style/LineEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:hint="@string/password"
+                                android:inputType="textPassword" />
+
+                            <EditText
+                                android:id="@+id/retype_password"
+                                style="@style/LineEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:hint="@string/retype_password"
+                                android:inputType="textPassword" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_save"
+                            style="@style/HighLightButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:text="@string/save" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_verify_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_5sdp"
+                            android:paddingVertical="@dimen/_7sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:text="Bấm vào đây để xác thực tài khoản qua email"
+                                android:textColor="@color/foreground"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </eightbitlab.com.blurview.BlurView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

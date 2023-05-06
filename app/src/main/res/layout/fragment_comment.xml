@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <ExpandableListView
+        android:id="@+id/list_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_comment"
+        android:layout_marginVertical="15dp"
+        android:groupIndicator="@null"
+        android:overScrollMode="never"
+        android:divider="@null"/>
+
+    <LinearLayout
+        android:id="@+id/layout_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText">
+
+            <TextView
+                android:id="@+id/reply_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:layout_alignBottom="@id/txt_username_reply"
+                android:layout_alignTop="@id/txt_username_reply"
+                style="@style/SmallText"
+                android:text="Reply to " />
+
+            <TextView
+                android:id="@+id/txt_username_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/reply_to"
+                android:text="sai"
+                style="@style/NormalText"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_cancel_reply"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt_username_reply"
+                android:layout_alignBottom="@+id/txt_username_reply"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_cancel" />
+        </RelativeLayout>
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:id="@+id/files_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:flChildSpacingForLastRow="align">
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+
+        </com.nex3z.flowlayout.FlowLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/btn_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:src="@drawable/ic_camera" />
+
+            <ImageView
+                android:id="@+id/btn_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:src="@drawable/ic_image" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_weight="10"
+                style="@style/LineEditText"
+                android:hint="@string/message" />
+
+            <ImageView
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:src="@drawable/ic_send" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

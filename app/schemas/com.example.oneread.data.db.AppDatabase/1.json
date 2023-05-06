@@ -1,0 +1,105 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "f04b5ca44b347fbfd891d23bb6de7bdf",
+    "entities": [
+      {
+        "tableName": "HistorySearch",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`search` TEXT NOT NULL, PRIMARY KEY(`search`))",
+        "fields": [
+          {
+            "fieldPath": "search",
+            "columnName": "search",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "search"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "DownloadChapter",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`chapter_endpoint` TEXT NOT NULL, `book_endpoint` TEXT NOT NULL, `time` TEXT, `title` TEXT, `images` TEXT, PRIMARY KEY(`chapter_endpoint`, `book_endpoint`))",
+        "fields": [
+          {
+            "fieldPath": "chapter_endpoint",
+            "columnName": "chapter_endpoint",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "book_endpoint",
+            "columnName": "book_endpoint",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "time",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "images",
+            "columnName": "images",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "chapter_endpoint",
+            "book_endpoint"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "DownloadBook",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`endpoint` TEXT NOT NULL, `detail` TEXT, PRIMARY KEY(`endpoint`))",
+        "fields": [
+          {
+            "fieldPath": "endpoint",
+            "columnName": "endpoint",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "detail",
+            "columnName": "detail",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "endpoint"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f04b5ca44b347fbfd891d23bb6de7bdf')"
+    ]
+  }
+}

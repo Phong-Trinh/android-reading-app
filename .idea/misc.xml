@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/drawable/bottom_sheet.xml" value="0.2385" />
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/drawable/ic_download.xml" value="0.277" />
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/drawable/ic_edit.xml" value="0.2385" />
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/drawable/ic_image.xml" value="0.2385" />
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/layout/activity_detail.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/layout/activity_login.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/layout/activity_profile.xml" value="0.33" />
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/layout/book_item_rect.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/layout/chapter_text_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/layout/fragment_about.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/layout/fragment_signin.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/AndroidStudioProjects/OneRead/app/src/main/res/layout/fragment_signup.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable-v24/background.xml" value="0.30833333333333335" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable-v24/bottom_sheet.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable-v24/tab_selector.xml" value="0.30833333333333335" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/bottom_sheet.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/cursor_edittext.xml" value="0.30833333333333335" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/highlight_button_background.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/highlight_text_item.xml" value="0.30833333333333335" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_back.xml" value="0.29375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_book.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_camera.xml" value="0.22" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_cancel.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_check.xml" value="0.15520833333333334" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_comment.xml" value="0.15416666666666667" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_delete.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_double_arrow_left.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_double_arrow_right.xml" value="0.30833333333333335" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_download.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_esc.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_follow.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_followed.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_image.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_info.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_notification.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_reply.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_search.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_send.xml" value="0.30833333333333335" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_star.xml" value="0.30833333333333335" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_sun.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_uncheck.xml" value="0.15520833333333334" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_user.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/ic_view.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/image_loading.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/lowlight_button_background.xml" value="0.30833333333333335" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/moon.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/moon_24.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/myswitch.xml" value="0.30833333333333335" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/nav_menu_item_appearance.xml" value="0.33" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/nav_menu_item_background.xml" value="0.30833333333333335" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/nav_menu_item_style.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/sun.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/tab_selector.xml" value="0.309375" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/drawable/text_item.xml" value="0.30833333333333335" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/activity_book_case.xml" value="0.33" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/activity_chapter.xml" value="0.33" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/activity_delete_chapter.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/activity_detail.xml" value="0.33" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/activity_donwload_chapter.xml" value="0.33" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/activity_list_book.xml" value="0.25" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/activity_login.xml" value="0.1390625" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/activity_search.xml" value="0.33" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/book_item_circle.xml" value="0.1390625" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/book_item_large_rect.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/book_item_rect.xml" value="0.25" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/book_item_row.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/chapter_download_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/chapter_image_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/chapter_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/chapter_text_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/fragment_about.xml" value="0.33" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/fragment_chapter.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/fragment_chapter_content.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/fragment_comment.xml" value="0.2921875" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/fragment_search.xml" value="0.2921875" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/fragment_signin.xml" value="0.33" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/fragment_signup.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/history_read_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/item_comment_reply.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/item_comment_root.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/myswitch.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/nav_header.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/notification_dialog.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/notification_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/progress_dialog.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/rating_dialog.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/layout/slider_item.xml" value="0.29322916666666665" />
+        <entry key="..\:/Intellij-workspace/OneRead/app/src/main/res/menu/nav_menu.xml" value="0.3078125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

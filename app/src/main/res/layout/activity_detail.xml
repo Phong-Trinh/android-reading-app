@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity"
+    android:weightSum="5"
+    android:orientation="vertical"
+    android:background="@color/primary"
+    android:id="@+id/root">
+
+    <ImageView
+        android:id="@+id/theme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentStart="true"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TitleText"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/btn"
+                android:layout_toEndOf="@+id/btn_back"
+                android:text="@string/app_name" />
+
+            <LinearLayout
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+                <ImageView
+                    android:id="@+id/btn_download"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:padding="@dimen/_14sdp"
+                    android:src="@drawable/ic_download" />
+                <ImageView
+                    android:id="@+id/btn_delete"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:padding="@dimen/_14sdp"
+                    android:src="@drawable/ic_delete"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@color/transparent"
+            android:layout_below="@id/top_layout"
+            android:layout_margin="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/thumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/background" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/thumbnail"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layout_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/transparent"
+                app:cardCornerRadius="@dimen/rect_corner"
+                app:cardElevation="0dp">
+
+                <eightbitlab.com.blurview.BlurView
+                    android:id="@+id/tab_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tab_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabIndicatorColor="@color/normal_text"
+                        app:tabSelectedTextColor="@color/normal_text"
+                        app:tabTextColor="@color/small_text">
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tab_about"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/about" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tab_chapter"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/chapter" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tab_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="comment"
+                            tools:ignore="HardcodedText" />
+
+                    </com.google.android.material.tabs.TabLayout>
+                </eightbitlab.com.blurview.BlurView>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent">
+
+                <eightbitlab.com.blurview.BlurView
+                    android:id="@+id/content_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bottom_sheet">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/frm_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/transparent" />
+                </eightbitlab.com.blurview.BlurView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

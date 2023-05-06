@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/_10sdp" android:right="@dimen/_10sdp" android:drawable="@drawable/nav_menu_item_appearance"/>
+</layer-list>

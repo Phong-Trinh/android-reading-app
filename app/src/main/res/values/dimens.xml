@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="large_avatar">@dimen/_70sdp</dimen>
+    <dimen name="avatar">@dimen/_40sdp</dimen>
+    <dimen name="small_avatar">@dimen/_30sdp</dimen>
+    <dimen name="rect_corner">@dimen/_12sdp</dimen>
+    <dimen name="card_corner">@dimen/_18sdp</dimen>
+    <dimen name="round_corner">@dimen/_200sdp</dimen>
+    <dimen name="large_text">@dimen/_18sdp</dimen>
+    <dimen name="normal_text">@dimen/_12sdp</dimen>
+    <dimen name="small_text">@dimen/_10sdp</dimen>
+    <dimen name="line">1dp</dimen>
+    <dimen name="icon">@dimen/_12sdp</dimen>
+    <dimen name="large_icon">@dimen/_24sdp</dimen>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/card"
+    android:layout_height="@dimen/_150sdp"
+    android:id="@+id/header_menu">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            app:riv_corner_radius="@dimen/round_corner"
+            android:layout_width="@dimen/large_avatar"
+            android:layout_height="@dimen/large_avatar"
+            android:src="@drawable/avatar"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/NormalText"/>
+    </LinearLayout>
+</LinearLayout>

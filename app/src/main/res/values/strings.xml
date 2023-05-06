@@ -1,0 +1,109 @@
+<resources>
+    <string-array name="list_status">
+        <item>Tất cả</item>
+        <item>Đang tiến hành</item>
+        <item>Đã hoàn thành</item>
+    </string-array>
+    <string-array name="list_type">
+        <item>Tất cả</item>
+        <item>Comic</item>
+        <item>Novel</item>
+        <item>Literature</item>
+    </string-array>
+
+
+    <string name="app_name">OneRead</string>
+    <string name="register">Đăng ký</string>
+    <string name="login">Đăng nhập</string>
+    <string name="first_name">Họ</string>
+    <string name="last_name">Tên</string>
+    <string name="username">Username</string>
+    <string name="phone">SĐT</string>
+    <string name="birthday">Ngày sinh</string>
+    <string name="gender">Giới tính</string>
+    <string name="status">Trạng thái</string>
+    <string name="job">Nghề nghiệp</string>
+    <string name="home">Chỗ ở</string>
+    <string name="bio">Giới thiệu bản thân</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="about_me">About me</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="setting">Setting</string>
+    <string name="personal_profile">Thông tin cá nhân</string>
+    <string name="save_info">Lưu thông tin</string>
+    <string name="tab_chat">Chat</string>
+    <string name="tab_people">People</string>
+    <string name="tab_explore">Explore</string>
+    <string name="message">Message</string>
+    <string name="time">Time</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="history_search">Lịch sử tìm kiếm</string>
+    <string name="list_people">Danh sách người dùng</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="delete">Xoá</string>
+
+    <!-- ACTION -->
+    <string name="delete_success">Xoá thành công</string>
+    <string name="insert_success">Thêm thành công</string>
+    <string name="update_success">Cập nhật thành công</string>
+    <string name="login_success">Đăng nhập thành công</string>
+    <string name="logout_success">Đăng xuất thành công</string>
+    <string name="register_success">Đăng ký thành công</string>
+    <string name="upload_success">Upload file thành công</string>
+
+    <string name="delete_fail">Xoá thất bại</string>
+    <string name="insert_fail">Thêm thất bại</string>
+    <string name="update_fail">Cập nhật thất bại</string>
+    <string name="login_fail">Đăng nhập thất bại</string>
+    <string name="logout_fail">Đăng xuất thất bại</string>
+    <string name="register_fail">Đăng ký thất bại</string>
+    <string name="upload_fail">Upload file thất bại</string>
+
+    <string name="something_wrong">Something went wrong</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="top_day">Top ngày</string>
+    <string name="top_month">Top tháng</string>
+    <string name="top_year">Top Năm</string>
+    <string name="genre">Thể loại</string>
+    <string name="type">Loại</string>
+    <string name="all">Tất cả</string>
+    <string name="ongoing">Đang tiến hành</string>
+    <string name="finish">Đã hoàn thành</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="last_update">Mới cập nhật</string>
+    <string name="recommend">Sách đề cử</string>
+    <string name="suggest_for_you">Đề xuất cho bạn</string>
+    <string name="top_follow">Nhiều lượt theo dõi nhất</string>
+    <string name="top_rating">Sách được đánh giá cao</string>
+    <string name="rank">Bảng xếp hạng</string>
+    <string name="comment">Bình luận</string>
+    <string name="chapters">Danh sách chương</string>
+    <string name="rate">Đánh giá</string>
+    <string name="author">Tác giả</string>
+    <string name="CHAPTERS">DANH SÁCH CHƯƠNG</string>
+    <string name="readmore">Xem thêm</string>
+
+    <!-- Validation -->
+    <string name="network_required"> Vui lòng bật kết nối mạng để thực hiện chức năng này </string>
+    <string name="login_required">Vui lòng đăng nhập để thực hiện chức năng này </string>
+    <string name="cannot_connect_to_server"> Không thể kết nối đến server </string>
+    <string name="empty_username"> Username không được bỏ trống</string>
+    <string name="empty_password"> Password không được bỏ trống</string>
+    <string name="empty_email"> Email không được bỏ trống</string>
+    <string name="invalid_email"> Tên email từ 5 ký tự trở lên và bao gồm @example.com(.vn) </string>
+    <string name="invalid_password"> Password ít nhất 8 ký tự bao gồm số và chữ cái và kí tự đặc biệt</string>
+    <string name="bookcase">Tủ sách</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="following">Sách đang theo dõi</string>
+    <string name="reply">Trả lời</string>
+    <string name="top_search">Sách được tìm kiếm nhiều nhất</string>
+    <string name="result">Kết quá tìm kiếm</string>
+    <string name="about">About</string>
+    <string name="chapter">Chapter</string>
+    <string name="recent">Sách mới đọc gần đây</string>
+    <string name="profile">Thông tin cá nhân</string>
+    <string name="save">Lưu thông tin</string>
+    <string name="retype_password">Retype password</string>
+</resources>
